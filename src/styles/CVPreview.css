@@ -1,0 +1,165 @@
+.preview_download {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.preview_cv {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 92%);
+}
+
+/* ----- Common styles ----- */
+.cv_main,
+.cv_sidebar {
+  padding: 40px;
+}
+
+.cv_title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cv_entry-title {
+  font-size: 1.6rem;
+}
+
+.cv_sidebar hr,
+.cv_main hr {
+  margin: 8px 0 20px;
+}
+
+/* ----- Sidebar ----- */
+.cv_sidebar {
+  max-width: 250px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.cv_sidebar-section {
+  display: flex;
+  flex-direction: column;
+}
+
+* + .cv_sidebar-section {
+  margin-top: 50px;
+}
+
+.cv_sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cv_sidebar hr {
+  border: 1px solid hsl(0, 0%, 20%);
+}
+
+.cv_lang-list > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv_interest-list {
+  gap: 8px;
+}
+
+.cv_interest-list > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ----- Main section ----- */
+.cv_main hr {
+  border: 1px solid hsl(0, 0%, 90%);
+}
+
+.cv_main > div + div {
+  margin-top: 80px;
+}
+
+.cv_name {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.cv_profession {
+  margin-top: 5px;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.cv_about-list {
+  margin-top: 25px;
+  word-break: break-all;
+}
+
+.cv_location,
+.cv_about-list li,
+.cv_about-list a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv_about-list > ul {
+  list-style: none;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cv_main-entry-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cv_main-entry-block + .cv_main-entry-block {
+  margin-top: 35px;
+}
+
+.cv_experience-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv_experience-details > p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .preview_cv {
+    font-size: 1rem;
+  }
+
+  .cv_main,
+  .cv_sidebar {
+    padding: 20px;
+  }
+
+  .cv_sidebar {
+    max-width: 120px;
+  }
+
+  .cv_title {
+    font-size: 1rem;
+  }
+
+  .cv_name {
+    font-size: 2rem;
+  }
+
+  .cv_profession {
+    font-size: 1rem;
+  }
+
+  .cv_entry-title {
+    font-size: 1rem;
+  }
+}
